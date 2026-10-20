@@ -1,0 +1,115 @@
+/* Shared phone ergonomics. Scene-specific art direction stays in its own CSS. */
+@media (max-width:700px), (pointer:coarse), (max-width:1000px) and (max-height:500px) {
+  html { -webkit-text-size-adjust:100%; overscroll-behavior-y:none; }
+  body { overflow-x:clip; }
+  button { min-width:44px; min-height:44px; touch-action:manipulation; }
+  header a,header button { display:inline-flex; align-items:center; justify-content:center; min-height:44px; }
+  input[type=range] { min-height:44px; }
+  dialog { max-height:calc(100dvh - env(safe-area-inset-top) - env(safe-area-inset-bottom) - 24px); overscroll-behavior:contain; }
+  dialog .close { min-width:48px; min-height:48px; }
+  #app>header { min-height:74px; padding-top:env(safe-area-inset-top); margin:0 18px; gap:12px; }
+  #app>header nav,#app>header .telegram { display:none; }
+  #app #menu-button { display:block; }
+  #app .brand { font-size:32px; justify-content:flex-start; }
+  #app #sound-top { font-size:11px; margin-left:auto; }
+  #app #menu-button { font-size:12px; padding:8px 0 8px 8px; }
+  #app .scene-status { top:calc(91px + env(safe-area-inset-top)); left:20px; right:20px; font-size:9px; }
+  #app .home-track { height:780svh; }
+  #app .home-intro,#app .home-middle,#app .home-end { padding:105px 24px 190px; }
+  #app .home-intro h1 { font-size:23vw; margin-bottom:24px; }
+  #app .welcome { font-size:clamp(20px,5.5vw,25px); margin-bottom:24px; }
+  #app .motto { font-size:13px; margin-bottom:24px; }
+  #app .inline-actions { display:grid; grid-template-columns:1fr 1fr; gap:16px; width:100%; max-width:360px; }
+  #app .text-link { min-width:0; min-height:48px; gap:10px; font-size:12px; }
+  #app .chapter-rail { top:32%; right:6px; gap:0; }
+  #app .chapter-rail button { width:44px; padding:10px 3px; font-size:10px; justify-content:flex-end; }
+  #app .chapter-rail button i { width:7px; }
+  #app .chapter-rail button[aria-current=step] i { width:15px; }
+  #app .bottom-bar { bottom:calc(10px + env(safe-area-inset-bottom)); left:20px; right:20px; gap:12px; }
+  #app .bottom-bar button { min-height:48px; padding:8px 14px; border:1px solid #c8b6e94a; border-radius:28px; background:#100d1cbb; font-size:12px; }
+  #app .bottom-bar a { font-size:10px; min-height:44px; display:flex; align-items:center; }
+  #app .release-note { bottom:calc(84px + env(safe-area-inset-bottom)); right:24px; padding:13px 0; }
+  #app .release-note small { font-size:9px; }
+  #app #scene-controls { bottom:0; left:0; right:0; gap:4px 12px; padding:8px 18px calc(8px + env(safe-area-inset-bottom)); font-size:12px; background:linear-gradient(0deg,#0b0a10ed,#0b0a10bd); }
+  #app #scene-controls button,#app #scene-controls a { min-height:44px; display:inline-flex; align-items:center; font-size:12px; }
+  #app #scene-controls #sound { font-size:11px; }
+  #app #scene-controls #action { font-size:12px; }
+  #app .world-weather { top:calc(125px + env(safe-area-inset-top)); left:22px; gap:14px; max-width:calc(100vw - 44px); }
+  #app .world-weather button { font-size:12px; white-space:nowrap; }
+  #app .world-copy { bottom:168px; left:24px; }
+  #app .world-copy p { font-size:13px; }
+  #app .corridor-label { left:24px; bottom:184px; right:24px; }
+  #app .corridor-label .eyebrow { font-size:10px; line-height:1.7; }
+  #app .corridor-walk { bottom:calc(90px + env(safe-area-inset-bottom)); gap:8px; }
+  #app .corridor-walk button { min-height:48px; font-size:12px; }
+  #app .distance { left:22px; bottom:calc(150px + env(safe-area-inset-bottom)); font-size:10px; }
+  #app #walk-help { left:22px; right:22px; bottom:calc(var(--controls-height,64px) + 16px); align-items:center; font-size:11px; }
+  #app #walk-help button { font-size:11px; max-width:160px; }
+  #app #joystick { bottom:calc(var(--controls-height,64px) + 90px); left:24px; width:104px; height:104px; }
+  #app #joystick i { inset:34px; }
+  #app #toast { bottom:calc(145px + env(safe-area-inset-bottom)); font-size:13px; width:max-content; max-width:88vw; }
+  #world-menu { width:calc(100vw - 24px); padding:38px 24px 24px; border-radius:18px; }
+  #world-menu h2 { font-size:36px; margin:18px 0; }
+  #world-menu .world-links a { min-height:52px; font-size:23px; padding:12px 0; }
+  #world-menu .menu-corridor { min-height:48px; display:flex; align-items:center; margin-top:14px; font-size:13px; }
+  #app .editorial { padding:130px 24px 36px; }
+  #app .release-copy p:not(.eyebrow) { font-size:15px; }
+  .joystick { touch-action:none; min-width:94px; min-height:94px; }
+  #freefall #world,#experience:not(.exploring) #world,#resonance #world,#scene { touch-action:pan-y pinch-zoom; }
+  #experience.exploring #world,.walking #world { touch-action:none; }
+  #bloom .ritual button { width:44px; }
+  #bloom .actions { font-size:12px; gap:10px; }
+  #bloom .ritual small { font-size:8px; }
+  #bloom .touch { bottom:calc(125px + env(safe-area-inset-bottom)); }
+  #bloom footer { bottom:calc(12px + env(safe-area-inset-bottom)); }
+  #bloom .chapter { top:100px; }
+  body[data-mobile-scene=unwritten] #track { height:2100svh; }
+  .embedded #experience>header { left:0; right:0; padding:8px 18px!important; min-height:64px!important; justify-content:flex-end; }
+  .embedded #experience .chapter { top:78px!important; left:22px; right:22px; font-size:9px; max-width:none; }
+  .embedded .journey-parts { top:auto; bottom:calc(92px + env(safe-area-inset-bottom)); left:20px; right:20px; display:flex; justify-content:space-between; gap:10px; font-size:12px; }
+  .embedded .journey-parts a { min-height:44px; display:flex; align-items:center; }
+  body[data-mobile-scene=unwritten] .object-note { bottom:calc(156px + env(safe-area-inset-bottom)); right:22px; font-size:12px; }
+  .embedded #experience #explore,.embedded #experience header button { font-size:12px; }
+  #museum .walk-controls,.walk-controls { bottom:calc(90px + env(safe-area-inset-bottom)); }
+  #resonance .interaction { bottom:calc(18px + env(safe-area-inset-bottom)); padding:5px 9px; font-size:12px; }
+  #resonance .intro h1 { font-size:clamp(45px,13.5vw,60px); }
+  #resonance header { gap:12px; }
+  #resonance header .world-return { font-size:12px; }
+  #resonance .sound { font-size:11px; }
+  body[data-mobile-scene=manifestation] .story-line { font-size:14px; line-height:1.65; }
+  body[data-mobile-scene=manifestation] .next { font-size:12px; min-height:48px; }
+  body[data-mobile-scene=manifestation] [data-act] { font-size:10px; }
+  body[data-mobile-scene=manifestation] .world-return { font-size:12px; }
+  body[data-mobile-scene=manifestation] #gesture { font-size:10px; line-height:1.6; }
+  body[data-mobile-scene=manifestation] .footer-line button { font-size:10px; min-width:74px; }
+}
+@media (max-width:700px) and (max-height:650px) {
+  #app .home-intro,#app .home-middle,#app .home-end { padding:105px 22px 150px; }
+  #app .welcome { margin-bottom:17px; }
+  #app .home-intro h1 { margin-bottom:20px; }
+  #app .motto { margin-bottom:10px; }
+  #app .release-note { bottom:65px; padding:8px 0; }
+  #app .release-note strong { font-size:21px; }
+  #app .chapter-rail { top:26%; }
+  #app .home-middle h2,#app .home-end h2 { font-size:50px; margin:12px 0 18px; }
+  #app .corridor-label h1 { font-size:35px; }
+}
+@media (max-height:500px) and (orientation:landscape) {
+  #app>header { min-height:56px; }
+  #app .scene-status { top:68px; }
+  #app .home-intro,#app .home-middle,#app .home-end { padding:80px 6vw 55px; max-width:70vw; }
+  #app .welcome { font-size:19px; margin-bottom:12px; }
+  #app .home-intro h1 { font-size:15vw; margin-bottom:12px; }
+  #app .motto { display:none; }
+  #app .release-note { right:30px; bottom:64px; min-width:130px; }
+  #app .chapter-rail { top:65px; }
+  #app .chapter-rail button { min-height:36px; }
+  #app .corridor-label { bottom:100px; max-width:46%; }
+  #app .corridor-label h1 { font-size:32px; margin:7px 0; }
+  #app .corridor-label p:last-child { display:none; }
+  #app .world-weather { top:90px; }
+  #app .world-copy { bottom:80px; }
+  #app .world-copy h1 { font-size:42px; }
+  #app .corridor-walk { bottom:80px; left:70%; }
+  #app #joystick { bottom:90px; }
+}
