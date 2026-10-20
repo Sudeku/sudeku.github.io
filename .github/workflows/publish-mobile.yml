@@ -1,0 +1,59 @@
+name: Publish verified mobile update
+on:
+  workflow_dispatch:
+permissions:
+  contents: write
+concurrency:
+  group: sudeki-static-publication
+  cancel-in-progress: false
+jobs:
+  publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v7
+      - name: Download public mobile update
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download mobile-v59-2026-10-20 --repo "$GITHUB_REPOSITORY" --pattern Sudeki-mobile-v59-final.zip --dir "$RUNNER_TEMP/mobile-update"
+      - name: Verify and overlay static files
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import os
+          from pathlib import Path
+          import zipfile
+          archive = Path(os.environ['RUNNER_TEMP']) / 'mobile-update' / 'Sudeki-mobile-v59-final.zip'
+          expected = '8fd01f549681fac3eeb50040d53c512b76d31a9cac879edf6d792d06048eb625'
+          assert hashlib.sha256(archive.read_bytes()).hexdigest() == expected, 'Archive checksum mismatch'
+          root = Path('.').resolve()
+          total = 0
+          with zipfile.ZipFile(archive) as package:
+              entries = [e for e in package.infolist() if not e.is_dir()]
+              assert len(entries) == 53, 'Unexpected update file count'
+              for entry in entries:
+                  destination = (root / entry.filename).resolve()
+                  assert destination.is_relative_to(root), 'Unsafe archive path'
+                  assert destination.suffix in {'.html', '.js', '.css'}, 'Unexpected file type'
+                  assert not any(p.startswith('.') for p in destination.relative_to(root).parts), 'Unexpected hidden path'
+                  data = package.read(entry)
+                  destination.parent.mkdir(parents=True, exist_ok=True)
+                  destination.write_bytes(data)
+                  total += len(data)
+          assert total == 3229313, 'Unexpected update size'
+          assert 'v59.js' in Path('index.html').read_text(), 'Incorrect entry point'
+          print(f'Applied {len(entries)} verified static files; preserved existing models and archives.')
+          PY
+      - name: Publish mobile update
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- .
+          if git diff --cached --quiet; then
+            echo 'This exact mobile update is already present.'
+          else
+            git commit -m 'Improve phone rendering, scrolling and touch layouts (v59)'
+            git push origin HEAD:main
+          fi
+
