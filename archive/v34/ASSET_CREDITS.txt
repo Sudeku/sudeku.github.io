@@ -1,0 +1,27 @@
+SUDEKI WORLD / ASSET CREDITS
+Medieval Village MegaKit (standard free edition) — Quaternius. CC0.
+https://quaternius.com/packs/medievalvillagemegakit.html
+Source mirror: https://github.com/J-Ponzo/gltf-medieval-village-megakit
+Island Tree 02, Coastal Cliff 02, Fern 02 and surface materials — Poly Haven. CC0.
+https://polyhaven.com/a/island_tree_02
+https://polyhaven.com/a/coastal_cliff_02
+https://polyhaven.com/a/fern_02
+https://polyhaven.com/a/cobblestone_floor_09
+https://polyhaven.com/a/leafy_grass
+https://polyhaven.com/a/mossy_rock
+Powered by Poly Haven: https://polyhaven.com
+Village and nature meshes optimized for this website; textures reduced to web sizes.
+Three.js 0.160.0 — MIT. Original portal and level geometry: project code.
+Distant landscape plates: built-in imagegen. Visual reference: Sudeki game screenshots.
+No extracted meshes, textures, or music from the Sudeki game are included.
+
+Concrete Wall 006 and Marble 01 — Poly Haven, CC0.
+https://polyhaven.com/a/concrete_wall_006
+https://polyhaven.com/a/marble_01
+
+V12 dark corridor and refined First sky: original built-in imagegen artwork.
+Dark portal ambient animation: Gemini generation commissioned for Sudeki.
+No visual assets taken from Igloo or Active Theory.
+
+V34 First sky cover: original artwork generated with built-in imagegen for Sudeki.
+V34 Ouroboros: original procedural geometry and animation; Three.js, MIT license.

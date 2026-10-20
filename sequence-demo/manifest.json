@@ -1,0 +1,20 @@
+{
+  "large": {
+    "width": 1280,
+    "height": 720,
+    "bytes": 6209302,
+    "frames": 120
+  },
+  "medium": {
+    "width": 960,
+    "height": 540,
+    "bytes": 3979100,
+    "frames": 120
+  },
+  "small": {
+    "width": 480,
+    "height": 854,
+    "bytes": 2490132,
+    "frames": 120
+  }
+}

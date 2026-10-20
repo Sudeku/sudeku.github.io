@@ -1,0 +1,42 @@
+SUDEKI WORLD / ASSET CREDITS
+Medieval Village MegaKit (standard free edition) — Quaternius. CC0.
+https://quaternius.com/packs/medievalvillagemegakit.html
+Source mirror: https://github.com/J-Ponzo/gltf-medieval-village-megakit
+Island Tree 02, Coastal Cliff 02, Fern 02 and surface materials — Poly Haven. CC0.
+https://polyhaven.com/a/island_tree_02
+https://polyhaven.com/a/coastal_cliff_02
+https://polyhaven.com/a/fern_02
+https://polyhaven.com/a/cobblestone_floor_09
+https://polyhaven.com/a/leafy_grass
+https://polyhaven.com/a/mossy_rock
+Powered by Poly Haven: https://polyhaven.com
+Village and nature meshes optimized for this website; textures reduced to web sizes.
+Three.js 0.160.0 — MIT. Original portal and level geometry: project code.
+Distant landscape plates: built-in imagegen. Visual reference: Sudeki game screenshots.
+No extracted meshes, textures, or music from the Sudeki game are included.
+
+Concrete Wall 006 and Marble 01 — Poly Haven, CC0.
+https://polyhaven.com/a/concrete_wall_006
+https://polyhaven.com/a/marble_01
+
+V12 dark corridor and refined First sky: original built-in imagegen artwork.
+Dark portal ambient animation: Gemini generation commissioned for Sudeki.
+No visual assets taken from Igloo or Active Theory.
+
+V36 architecture, portal shaders, flight composition and world geometry: original Sudeki code. Three.js MIT. Reference mechanics studied at Active Theory, Igloo and Lusion; no reference site assets or source code shipped.
+
+V37 Matter: original segmented geometry, spring simulation, cursor interaction and procedural animation by Sudeki. No external sculpture/model/media. Three.js and RoundedBoxGeometry: MIT.
+
+V38: original six-stage flight, twisted ribbon geometry, chapter navigation, suspended field and interactive release sleeve. Matter simulation retained from V37.
+
+V39: original hinged approach arches, reactive mineral fragments, path-safe First sky geometry, breathing segmented beacon with an inner light.
+
+V40: local delayed shell response, original brushed-metal shader inputs and reflection lighting, curved instanced foliage, clustered meadow planting. Sequence studies remain separate drafts.
+
+V41: original real-time ocean shader, tidal architecture and spatial transitions; player-responsive meadow, curved foliage, bird flock and drifting petals. Studied Nurture and A Number From the Ghost for interaction principles; no reference code or assets included.
+
+V42 Liminal Bloom: original procedural petal geometry, garden composition, pollen spring simulation, underwater root filaments, water shader, ritual interaction and audio synthesis. No external 3D assets, generated video or reference-site source/assets used. Three.js, RoomEnvironment and postprocessing — MIT.
+
+V43 First sky: original fixed island geometry, mineral surface shader, cloud sea, waterfall shader, foliage, spring motes, segmented arch animation and breathing beacon shell. Cloud-bank texture generated with built-in imagegen for this project, retained in first-sky/assets/cloud-bank.png. No reference-site code or artwork used. Three.js and BufferGeometryUtils MIT.
+
+V44 Freefall: original deterministic seven-state matter choreography, Menger cell layout, camera flight, sculptural ribbons, spring interaction and audio synthesis. No external textures, models, videos, generated imagery or reference-site source. Three.js, RoundedBoxGeometry and postprocessing MIT.

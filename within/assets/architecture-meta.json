@@ -1,0 +1,508 @@
+{
+  "name": "Within ocean architecture",
+  "blender": "5.1.0",
+  "triangles": 99036,
+  "meshes": 64,
+  "bytes": 15311868,
+  "root": "WithinArchitecture",
+  "groups": {
+    "HeroArch": [
+      0,
+      0,
+      -45
+    ],
+    "WestCarillon": [
+      -21,
+      0,
+      -16
+    ],
+    "EastNeedle": [
+      22,
+      0,
+      -25
+    ],
+    "WestCrown": [
+      -24,
+      0,
+      -70
+    ],
+    "EastLantern": [
+      23,
+      0,
+      -86
+    ],
+    "TidalEngine": [
+      0,
+      14,
+      -100
+    ]
+  },
+  "engineSegments": [
+    {
+      "name": "TideSegment_00",
+      "position": [
+        9.047225199851463,
+        1.4329396997685149,
+        0.07263847995832748
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 0.15707963267948966,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_01",
+      "position": [
+        8.16161976156545,
+        4.1585529776142485,
+        0.15803013449522205
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 0.47123889803846897,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_02",
+      "position": [
+        6.477098115668776,
+        6.477098115668776,
+        0.11313708498984762
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 0.7853981633974483,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_03",
+      "position": [
+        4.1585529776142485,
+        8.161619761565449,
+        -0.025029514406436918
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 1.0995574287564276,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_04",
+      "position": [
+        1.4329396997685153,
+        9.047225199851463,
+        -0.14256104387013885
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 1.413716694115407,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_05",
+      "position": [
+        -1.4329396997685162,
+        9.04722519985146,
+        -0.14256104387013882
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 1.7278759594743864,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_06",
+      "position": [
+        -4.1585529776142485,
+        8.16161976156545,
+        -0.025029514406436974
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 2.0420352248333655,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_07",
+      "position": [
+        -6.477098115668775,
+        6.477098115668776,
+        0.11313708498984758
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 2.356194490192345,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_08",
+      "position": [
+        -8.161619761565449,
+        4.158552977614249,
+        0.15803013449522207
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 2.670353755551324,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_09",
+      "position": [
+        -9.04722519985146,
+        1.4329396997685158,
+        0.07263847995832741
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 2.9845130209103035,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_10",
+      "position": [
+        -9.047225199851463,
+        -1.4329396997685135,
+        -0.0726384799583273
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 3.2986722862692828,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_11",
+      "position": [
+        -8.161619761565452,
+        -4.158552977614244,
+        -0.15803013449522202
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 3.6128315516282616,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_12",
+      "position": [
+        -6.477098115668777,
+        -6.477098115668775,
+        -0.11313708498984776
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 3.9269908169872414,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_13",
+      "position": [
+        -4.15855297761425,
+        -8.161619761565449,
+        0.025029514406437
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 4.241150082346221,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_14",
+      "position": [
+        -1.4329396997685162,
+        -9.04722519985146,
+        0.14256104387013876
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 4.5553093477052,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_15",
+      "position": [
+        1.432939699768513,
+        -9.047225199851463,
+        0.14256104387013882
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 4.869468613064179,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_16",
+      "position": [
+        4.158552977614248,
+        -8.16161976156545,
+        0.025029514406437175
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 5.183627878423159,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_17",
+      "position": [
+        6.477098115668774,
+        -6.477098115668777,
+        -0.11313708498984763
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 5.497787143782138,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_18",
+      "position": [
+        8.161619761565449,
+        -4.15855297761425,
+        -0.15803013449522207
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 5.811946409141117,
+      "centroidRadius": 9.16
+    },
+    {
+      "name": "TideSegment_19",
+      "position": [
+        9.04722519985146,
+        -1.4329396997685169,
+        -0.07263847995832746
+      ],
+      "rotation": [
+        0,
+        0,
+        0
+      ],
+      "angle": 6.126105674500097,
+      "centroidRadius": 9.16
+    }
+  ],
+  "colliders": [
+    {
+      "name": "Gate buttress -1 0",
+      "x": -20.1,
+      "z": -50.1,
+      "radius": 1.05,
+      "minY": -0.7,
+      "maxY": 16.6
+    },
+    {
+      "name": "Gate buttress -1 1",
+      "x": -20.46,
+      "z": -46.4,
+      "radius": 1.05,
+      "minY": -0.7,
+      "maxY": 16.6
+    },
+    {
+      "name": "Gate buttress -1 2",
+      "x": -20.82,
+      "z": -42.0,
+      "radius": 1.05,
+      "minY": -0.7,
+      "maxY": 16.6
+    },
+    {
+      "name": "Hero gate west",
+      "x": -16,
+      "z": -45,
+      "radius": 5.8,
+      "minY": -3.3,
+      "maxY": 16.5
+    },
+    {
+      "name": "Gate buttress 1 0",
+      "x": 20.1,
+      "z": -50.1,
+      "radius": 1.05,
+      "minY": -0.7,
+      "maxY": 16.6
+    },
+    {
+      "name": "Gate buttress 1 1",
+      "x": 20.46,
+      "z": -46.4,
+      "radius": 1.05,
+      "minY": -0.7,
+      "maxY": 16.6
+    },
+    {
+      "name": "Gate buttress 1 2",
+      "x": 20.82,
+      "z": -42.0,
+      "radius": 1.05,
+      "minY": -0.7,
+      "maxY": 16.6
+    },
+    {
+      "name": "Hero gate east",
+      "x": 16,
+      "z": -45,
+      "radius": 5.8,
+      "minY": -3.3,
+      "maxY": 16.5
+    },
+    {
+      "name": "WestCarillon",
+      "x": -21,
+      "z": -16,
+      "radius": 6.75,
+      "minY": -3.4,
+      "maxY": 25.5
+    },
+    {
+      "name": "EastNeedle",
+      "x": 22,
+      "z": -25,
+      "radius": 6.75,
+      "minY": -3.4,
+      "maxY": 33.5
+    },
+    {
+      "name": "WestCrown",
+      "x": -24,
+      "z": -70,
+      "radius": 6.75,
+      "minY": -3.4,
+      "maxY": 37.5
+    },
+    {
+      "name": "EastLantern",
+      "x": 23,
+      "z": -86,
+      "radius": 6.75,
+      "minY": -3.4,
+      "maxY": 28.5
+    },
+    {
+      "name": "DistantRemnant_0",
+      "x": -53,
+      "z": -112,
+      "radius": 5.2,
+      "minY": -2,
+      "maxY": 29
+    },
+    {
+      "name": "DistantRemnant_1",
+      "x": 49,
+      "z": -142,
+      "radius": 4.5,
+      "minY": -2,
+      "maxY": 40
+    },
+    {
+      "name": "DistantRemnant_2",
+      "x": -44,
+      "z": -165,
+      "radius": 5.5,
+      "minY": -2,
+      "maxY": 44
+    },
+    {
+      "name": "DistantRemnant_3",
+      "x": 62,
+      "z": -190,
+      "radius": 4.3,
+      "minY": -2,
+      "maxY": 31
+    },
+    {
+      "name": "DistantRemnant_4",
+      "x": -68,
+      "z": -50,
+      "radius": 5.0,
+      "minY": -2,
+      "maxY": 19
+    },
+    {
+      "name": "DistantRemnant_5",
+      "x": 71,
+      "z": -21,
+      "radius": 4.2,
+      "minY": -2,
+      "maxY": 24
+    }
+  ],
+  "coordinateSystem": "Y-up glTF; metres",
+  "waterLevel": 0,
+  "routeClearance": {
+    "x": [
+      -6,
+      6
+    ],
+    "z": [
+      -120,
+      30
+    ],
+    "eyeY": 3.0
+  },
+  "engineClearInnerRadius": 8.18,
+  "engineOuterRadius": 10.12,
+  "engineLowestSolidY": 3.88,
+  "aoResolution": 2048,
+  "verifiedFiniteAttributes": true,
+  "routeMinimumSurfaceDistance": 1.9502,
+  "seconds": 124.7
+}

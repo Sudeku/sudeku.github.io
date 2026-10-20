@@ -1,0 +1,12 @@
+<!doctype html>
+<html lang="ru"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name="theme-color" content="#101522"><title>Open sea — Sudeki</title><link rel="stylesheet" href="ocean.css"></head>
+<body><main id="ocean" data-ready="false" data-period="night">
+<canvas id="water" tabindex="0" aria-label="Open sea. WASD или колесо — идти, потяни — осмотреться. Прикоснись к воде, чтобы оставить круги."></canvas>
+<div class="shade" aria-hidden="true"></div>
+<header><a class="brand" href="../index.html#/" data-nav="#/"><i></i>sudeki</a><span class="index">REALITY 04 / OPEN SEA</span><nav><button data-nav="#/worlds">Миры ↗</button><a href="../index.html#/corridor" data-nav="#/corridor">← Коридор</a></nav></header>
+<div class="intro"><small>EVERYTHING LEAVES A TRACE</small><h1>Open <em>sea.</em></h1><p>Побудь здесь.<br>Вода запомнит твой путь.</p></div>
+<div class="place" role="status" aria-live="polite"></div>
+<footer><p class="hint">Колесо / WASD — идти<br>Потяни — осмотрись · коснись воды</p><nav class="periods" aria-label="Время суток"><button data-period="0" aria-pressed="true">Ночь</button><button data-period="1" aria-pressed="false">Рассвет</button><button data-period="2" aria-pressed="false">День</button></nav><button class="time" aria-pressed="true">Ход времени Ⅱ</button><div class="steps"><button data-step="-1" aria-label="Идти назад">↓</button><button data-step="1" aria-label="Идти вперёд">↑</button></div></footer>
+<div class="loading" role="status">ПРИСЛУШАЙСЯ К ВОДЕ <i></i></div><div class="departure" aria-hidden="true"></div>
+<div class="fallback" hidden><p>На этом устройстве 3D-мир недоступен.</p><a href="../index.html#/worlds" data-nav="#/worlds">Выбрать другой мир ↗</a></div>
+</main><script src="../first-sky/three-runtime.min.js"></script><script src="ocean.js"></script></body></html>

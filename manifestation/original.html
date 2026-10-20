@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#090a0d">
+  <meta name="description" content="ПРОЯВЛЕНИЕ. Художественный мир Sudeki: из невидимости — в присутствие. Интерактивный опыт в трёх актах.">
+  <title>Первоначальное ПРОЯВЛЕНИЕ — SUDEKI</title>
+  <link rel="stylesheet" href="./assets/original.css">
+</head>
+<body>
+  <main id="experience" aria-label="Проявление: интерактивный опыт">
+    <div class="world"><canvas id="scene" aria-label="Фигура в капюшоне среди раскрывающихся зеркальных пластин"></canvas></div>
+    <div class="atmosphere" aria-hidden="true"></div><div class="grain" aria-hidden="true"></div>
+    <header class="masthead">
+      <a class="brand" href="#" aria-label="Sudeki — к началу">SUDEKI<span>°</span></a>
+      <nav class="version-switch" aria-label="Версии для сравнения"><a href="./original.html" data-version="./original.html" aria-current="page">ПЕРВОНАЧАЛЬНЫЙ</a><span>/</span><a href="./index.html" data-version="./index.html" >НОВЫЙ</a></nav>
+      <button id="sound" class="sound" aria-pressed="false"><span class="sound-bars" aria-hidden="true"><i></i><i></i><i></i><i></i></span><span id="sound-label">ЗВУК ВЫКЛ.</span></button>
+    </header>
+    <section class="story" aria-live="polite">
+      <p class="eyebrow">ПРОЯВЛЕНИЕ <span> / </span> <span id="act-code">АКТ I</span></p>
+      <h1 id="headline">Право<br><em>быть.</em></h1>
+      <p id="story-line" class="story-line">Между защитой<br>и исчезновением.</p>
+      <div class="story-marker" aria-hidden="true"><span></span><i>01</i></div>
+    </section>
+    <div class="object-caption" aria-hidden="true"><span>SUDEKI / ФОРМА 001</span><span id="object-caption">ГРАНИЦА ПРИСУТСТВИЯ</span></div>
+    <button class="next" id="next"><span id="next-label">ВОЙТИ В ПРОЯВЛЕНИЕ</span><span class="next-arrow" aria-hidden="true">↗</span></button>
+    <div class="journey">
+      <nav aria-label="Три акта проявления">
+        <button data-act="0" aria-current="step"><span>01</span> НЕВИДИМЫЙ</button>
+        <button data-act="1"><span>02</span> СОЗДАТЕЛЬ</button>
+        <button data-act="2"><span>03</span> ПРОЯВЛЕННЫЙ</button>
+      </nav>
+      <p id="gesture">ПРОКРУТИ, ЧТОБЫ ИДТИ ДАЛЬШЕ <span>↓</span></p>
+      <div class="timeline"><label for="progress" class="sr-only">Положение в истории</label><input id="progress" type="range" min="0" max="1000" value="0"><i id="progress-fill"></i></div>
+      <div class="footer-line"><span>ХУДОЖЕСТВЕННЫЙ ОПЫТ В ТРЁХ АКТАХ</span><button id="reset">В НАЧАЛО ↖</button><span>SUDEKI © 2026</span></div>
+    </div>
+    <button class="about-button" id="about" aria-label="О концепции">?</button>
+  </main>
+  <dialog id="about-dialog"><button id="about-close" aria-label="Закрыть">×</button><p class="eyebrow">SUDEKI / ПРОЯВЛЕНИЕ</p><h2>Право на<br><em>присутствие.</em></h2><p>Капюшон как граница. Зеркало как внутренний судья. Голос как способ занять пространство.</p><p>Три акта одной истории: скрыться, собрать себя, проявиться. Мир продолжает меняться — вместе с тем, кто в нём живёт.</p><p class="note">Прокрутка ведёт вперёд и назад. В третьем акте удерживай «Я здесь», чтобы почувствовать резонанс. Звук включается отдельно.</p></dialog>
+  <div id="loading" role="status"><span class="loader-mark">S°</span><p id="status">Собираем присутствие</p><span class="loader-line"></span></div>
+  <div id="failure" hidden role="alert"><h2>Нужен ещё один вдох.</h2><p>Не удалось открыть 3D-пространство.</p><button onclick="location.reload()">Попробовать снова ↗</button></div>
+  <output id="diagnostics" hidden></output>
+  <script type="module" src="./assets/original.js"></script>
+</body>
+</html>

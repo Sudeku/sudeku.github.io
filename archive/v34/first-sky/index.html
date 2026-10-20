@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+  <meta name="theme-color" content="#2e294c">
+  <title>First sky — Sudeki</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <main id="sky" data-ready="false" data-station="0">
+    <div class="sky-backdrop" aria-hidden="true"></div>
+    <canvas id="world" aria-label="Первое небо: парящий остров. Листай, чтобы идти, и двигай мышью, чтобы осмотреться." tabindex="0"></canvas>
+    <div class="beacon-flare" aria-hidden="true"></div>
+    <div class="vignette" aria-hidden="true"></div>
+    <header class="masthead">
+      <a class="brand" data-back href="../../publish-v21/web/index.html#/corridor" aria-label="Sudeki — в коридор"><span class="brand-mark"></span>sudeki</a>
+      <span class="place-number">REALITY 01 / FIRST SKY</span>
+      <a class="back" data-back href="../../publish-v21/web/index.html#/corridor">← Коридор</a>
+    </header>
+    <div class="intro">
+      <p class="eyebrow">ON THE OTHER SIDE</p>
+      <h1>First <em>sky.</em></h1>
+      <p>Путь через остров в небе. Иди к свету, если захочешь.</p>
+    </div>
+    <div class="discovery" role="status" aria-live="polite">
+      <p class="discovery-number">01 / 03</p>
+      <strong>На краю неба</strong>
+      <span>Под ногами камень. Дальше — только облака.</span>
+    </div>
+    <button class="signal" type="button" aria-label="Зажечь маяк" aria-pressed="false"><span aria-hidden="true">✧</span><small>ПРОБУДИТЬ СВЕТ</small></button>
+    <div class="controls">
+      <p class="hint desktop-hint">Листай — иди · Потяни — осмотрись · W/S — идти</p>
+      <p class="hint mobile-hint">Кнопки — идти · Листай вниз — камера выше</p>
+      <nav class="stations" aria-label="Точки пути">
+        <button type="button" data-go="0" aria-current="step"><small>01</small><span>Край</span></button>
+        <button type="button" data-go="1"><small>02</small><span>Арки</span></button>
+        <button type="button" data-go="2"><small>03</small><span>Маяк</span></button>
+      </nav>
+      <div class="step-controls"><button type="button" data-step="-1" aria-label="Назад">↓</button><button type="button" data-step="1" aria-label="Вперёд">↑</button></div>
+    </div>
+    <div class="loading" role="status"><span>Открываем Первое небо</span><i></i></div>
+  </main>
+  <script src="../../../first-sky/three-runtime.min.js"></script>
+  <script src="main.js"></script>
+</body>
+</html>

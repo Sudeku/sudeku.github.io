@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="ru">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<title>Sudeki — Between worlds</title>
+<meta name="description" content="Пространственный выбор миров Sudeki. Листай между порталами и найди свой вход.">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<canvas id="scene" tabindex="0" aria-label="Восемь порталов Sudeki. Используй прокрутку или стрелки, чтобы выбрать мир; Enter — войти."></canvas>
+<div class="atmosphere" aria-hidden="true"></div>
+<header><a class="brand" href="/index.html#/">sudeki<span>°</span></a><span class="study">REALITIES WITHIN / SUDEKI</span><a class="back" href="/index.html#/worlds">Выбрать мир <span>↗</span></a></header>
+<main>
+<div class="intro"><p>THERE IS ALWAYS ANOTHER WAY IN</p><h1>Between<br><em>worlds.</em></h1></div>
+<div class="world-copy" aria-live="polite" aria-atomic="true"><p class="eyebrow"><span id="number">01</span> / REALITY</p><h2 id="title">Unwritten</h2><p id="description">Библиотека. Сквозь пустоту. Невозможные тела.</p><a id="enter" href="/index.html#/first-sky">Войти в мир <span>↗</span></a></div>
+</main>
+<nav id="worlds" aria-label="Выбор мира"></nav>
+<footer><p id="hint">Листай — камера проведёт между порталами</p><div class="arrows"><button id="prev" aria-label="Предыдущий мир">←</button><button id="next" aria-label="Следующий мир">→</button></div><span>SCROLL / EXPLORE / ENTER</span></footer>
+<div id="veil" aria-hidden="true"></div>
+<div id="loading" role="status">Открываем пространство<span></span></div>
+<noscript><div class="fallback">Для 3D нужен JavaScript. <a href="/index.html#/fragments">Выбрать мир</a></div></noscript>
+<script type="module" src="scene-v56.js"></script>
+</body></html>

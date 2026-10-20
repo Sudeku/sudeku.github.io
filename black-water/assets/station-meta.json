@@ -1,0 +1,297 @@
+{
+  "scene": "Black Water / abandoned station",
+  "roots": [
+    "Station",
+    "PortalFrame"
+  ],
+  "floorY": 0,
+  "walk": {
+    "minX": -5.7,
+    "maxX": 5.7,
+    "minZ": -64,
+    "maxZ": 23
+  },
+  "walkBounds": {
+    "minX": -5.7,
+    "maxX": 5.7,
+    "minZ": -64,
+    "maxZ": 23
+  },
+  "portal": {
+    "root": "PortalFrame",
+    "position": [
+      0,
+      0,
+      -12
+    ],
+    "innerWidth": 6.4,
+    "bottomY": 0.06,
+    "springY": 5.2,
+    "innerRadius": 3.2,
+    "topY": 8.4,
+    "outerRadius": 3.65,
+    "depth": 0.52,
+    "membrane": false
+  },
+  "colliders": [
+    {
+      "name": "column_L_00",
+      "type": "circle",
+      "x": -7,
+      "z": 18,
+      "radius": 0.72
+    },
+    {
+      "name": "column_L_01",
+      "type": "circle",
+      "x": -7,
+      "z": 6,
+      "radius": 0.72
+    },
+    {
+      "name": "column_L_02",
+      "type": "circle",
+      "x": -7,
+      "z": -6,
+      "radius": 0.72
+    },
+    {
+      "name": "column_L_03",
+      "type": "circle",
+      "x": -7,
+      "z": -24,
+      "radius": 0.72
+    },
+    {
+      "name": "column_L_04",
+      "type": "circle",
+      "x": -7,
+      "z": -36,
+      "radius": 0.72
+    },
+    {
+      "name": "column_L_05",
+      "type": "circle",
+      "x": -7,
+      "z": -48,
+      "radius": 0.72
+    },
+    {
+      "name": "column_L_06",
+      "type": "circle",
+      "x": -7,
+      "z": -60,
+      "radius": 0.72
+    },
+    {
+      "name": "column_R_00",
+      "type": "circle",
+      "x": 7,
+      "z": 18,
+      "radius": 0.72
+    },
+    {
+      "name": "column_R_01",
+      "type": "circle",
+      "x": 7,
+      "z": 6,
+      "radius": 0.72
+    },
+    {
+      "name": "column_R_02",
+      "type": "circle",
+      "x": 7,
+      "z": -6,
+      "radius": 0.72
+    },
+    {
+      "name": "column_R_03",
+      "type": "circle",
+      "x": 7,
+      "z": -24,
+      "radius": 0.72
+    },
+    {
+      "name": "column_R_04",
+      "type": "circle",
+      "x": 7,
+      "z": -36,
+      "radius": 0.72
+    },
+    {
+      "name": "column_R_05",
+      "type": "circle",
+      "x": 7,
+      "z": -48,
+      "radius": 0.72
+    },
+    {
+      "name": "column_R_06",
+      "type": "circle",
+      "x": 7,
+      "z": -60,
+      "radius": 0.72
+    },
+    {
+      "name": "side_bench_8",
+      "type": "circle",
+      "x": 8.39,
+      "z": 8,
+      "radius": 1
+    },
+    {
+      "name": "side_bench_-34",
+      "type": "circle",
+      "x": 8.39,
+      "z": -34,
+      "radius": 1
+    }
+  ],
+  "boxColliders": [
+    {
+      "name": "side_bench_8",
+      "type": "box",
+      "minX": 7.93,
+      "maxX": 8.85,
+      "minZ": 7.15,
+      "maxZ": 8.85
+    },
+    {
+      "name": "side_bench_-34",
+      "type": "box",
+      "minX": 7.93,
+      "maxX": 8.85,
+      "minZ": -34.85,
+      "maxZ": -33.15
+    }
+  ],
+  "lights": [
+    {
+      "name": "Light_Warm_00_L",
+      "position": [
+        -4.65,
+        9.7,
+        14
+      ],
+      "color": "#e6b978",
+      "intensity": 70,
+      "distance": 23
+    },
+    {
+      "name": "Light_Warm_01_R",
+      "position": [
+        4.65,
+        9.7,
+        2
+      ],
+      "color": "#e6b978",
+      "intensity": 70,
+      "distance": 23
+    },
+    {
+      "name": "Light_Warm_02_L",
+      "position": [
+        -4.65,
+        9.7,
+        -10
+      ],
+      "color": "#e6b978",
+      "intensity": 70,
+      "distance": 23
+    },
+    {
+      "name": "Light_Warm_03_R",
+      "position": [
+        4.65,
+        9.7,
+        -25
+      ],
+      "color": "#e6b978",
+      "intensity": 48,
+      "distance": 23
+    },
+    {
+      "name": "Light_Warm_04_L",
+      "position": [
+        -4.65,
+        9.7,
+        -41
+      ],
+      "color": "#e6b978",
+      "intensity": 48,
+      "distance": 23
+    },
+    {
+      "name": "Light_Warm_05_R",
+      "position": [
+        4.65,
+        9.7,
+        -57
+      ],
+      "color": "#e6b978",
+      "intensity": 48,
+      "distance": 23
+    },
+    {
+      "name": "Light_Distant",
+      "position": [
+        0,
+        4,
+        -61
+      ],
+      "color": "#72a8a0",
+      "intensity": 60,
+      "distance": 23
+    },
+    {
+      "name": "Light_Track",
+      "position": [
+        -8,
+        1,
+        -28
+      ],
+      "color": "#315e5c",
+      "intensity": 18,
+      "distance": 23
+    }
+  ],
+  "camera": {
+    "position": [
+      0,
+      1.85,
+      18
+    ],
+    "lookAt": [
+      0,
+      4,
+      -12
+    ],
+    "fov": 54
+  },
+  "materials": [
+    "Station dark stone",
+    "Station wet honed floor",
+    "Station green ceramic",
+    "Station aged bronze",
+    "Station graphite iron",
+    "Station smoked timber",
+    "Station ivory enamel",
+    "Station warm diffuser",
+    "Station cyan guide"
+  ],
+  "meshes": 25,
+  "triangles": 152400,
+  "bytes": 17286092,
+  "pbr_size": 1024,
+  "ao_size": 2048,
+  "build_seconds_before_preview": 141.35,
+  "renderRecommendation": {
+    "hemisphere": 0.24,
+    "environment": 0.24,
+    "floorRoughnessRange": [
+      0.27,
+      0.4
+    ],
+    "portalLightProvidedByRuntime": true
+  }
+}

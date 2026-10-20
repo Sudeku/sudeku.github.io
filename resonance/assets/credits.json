@@ -1,0 +1,12 @@
+{
+  "geometryAndMaterialAuthoring": "Original procedural geometry and Cycles bakes, Sudeki Resonance",
+  "environment": {
+    "title": "Studio Small 09",
+    "author": "Sergej Majboroda",
+    "provider": "Poly Haven",
+    "license": "CC0",
+    "source": "https://polyhaven.com/a/studio_small_09"
+  },
+  "ktxSoftware": "Khronos KTX-Software 4.4.2",
+  "compression": "UASTC quality 4, mipmaps, Zstandard 18; validated for KHR_texture_basisu"
+}

@@ -1,0 +1,146 @@
+{
+  "version": 1,
+  "height": 2.0512709617614746,
+  "units": "meters",
+  "coordinates": {
+    "up": "+Y",
+    "forward": "+Z",
+    "right": "+X"
+  },
+  "convention": "All pivots are glTF world positions in neutral stance. Bake each node world matrix into geometry before parenting to pivots. Parts list exact glTF node names. Left/Right labels denote the front-view sides: Left is negative X and Right is positive X. Leg IK rotates in the local YZ plane around X.",
+  "pivots": {
+    "pelvis": [
+      0,
+      1.005,
+      0
+    ],
+    "neck": [
+      0,
+      1.695,
+      0
+    ],
+    "head": [
+      0,
+      1.86,
+      0
+    ],
+    "leftShoulder": [
+      -0.252,
+      1.625,
+      0
+    ],
+    "leftElbow": [
+      -0.297,
+      1.34,
+      0.012
+    ],
+    "leftWrist": [
+      -0.307,
+      1.065,
+      0.032
+    ],
+    "rightShoulder": [
+      0.252,
+      1.625,
+      0
+    ],
+    "rightElbow": [
+      0.297,
+      1.34,
+      0.012
+    ],
+    "rightWrist": [
+      0.307,
+      1.065,
+      0.032
+    ],
+    "leftHip": [
+      -0.132,
+      1.005,
+      0
+    ],
+    "leftKnee": [
+      -0.132,
+      0.535,
+      0
+    ],
+    "leftAnkle": [
+      -0.132,
+      0.1,
+      0
+    ],
+    "rightHip": [
+      0.132,
+      1.005,
+      0
+    ],
+    "rightKnee": [
+      0.132,
+      0.535,
+      0
+    ],
+    "rightAnkle": [
+      0.132,
+      0.1,
+      0
+    ]
+  },
+  "parts": {
+    "torso": [
+      "Coat",
+      "CoatFrontSeam",
+      "LeftPocketWelt",
+      "RightPocketWelt"
+    ],
+    "head": [
+      "HoodShell",
+      "HoodRim",
+      "HoodLining",
+      "FaceVoid",
+      "HoodSeam"
+    ],
+    "leftUpperArm": [
+      "LeftUpperArm"
+    ],
+    "leftForearm": [
+      "LeftForearm"
+    ],
+    "leftHand": [
+      "LeftHand"
+    ],
+    "rightUpperArm": [
+      "RightUpperArm"
+    ],
+    "rightForearm": [
+      "RightForearm"
+    ],
+    "rightHand": [
+      "RightHand"
+    ],
+    "leftThigh": [
+      "LeftThigh"
+    ],
+    "leftShin": [
+      "LeftShin"
+    ],
+    "leftBoot": [
+      "LeftBoot"
+    ],
+    "rightThigh": [
+      "RightThigh"
+    ],
+    "rightShin": [
+      "RightShin"
+    ],
+    "rightBoot": [
+      "RightBoot"
+    ]
+  },
+  "restHeight": 2.0512709617614746,
+  "restTop": 2.0512709617614746,
+  "restFloor": 0,
+  "legAxisZ": 0,
+  "soleContactY": 0,
+  "toeForwardZ": 0.219,
+  "legOverlapMeters": 0.03
+}

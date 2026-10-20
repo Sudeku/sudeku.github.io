@@ -1,0 +1,577 @@
+{
+  "scene": "Sudeki / empty Museum of Memes",
+  "roots": [
+    "Museum"
+  ],
+  "floorY": 0,
+  "spawn": [
+    0,
+    1.8,
+    13
+  ],
+  "look": [
+    0,
+    3,
+    -22
+  ],
+  "bounds": {
+    "minX": -8.65,
+    "maxX": 8.65,
+    "minZ": -36.8,
+    "maxZ": 15.2
+  },
+  "colliders": [
+    {
+      "id": "pier_-1_14",
+      "x": -9.3,
+      "z": 14,
+      "radius": 0.65
+    },
+    {
+      "id": "pier_-1_3",
+      "x": -9.3,
+      "z": 3,
+      "radius": 0.65
+    },
+    {
+      "id": "pier_-1_-8",
+      "x": -9.3,
+      "z": -8,
+      "radius": 0.65
+    },
+    {
+      "id": "pier_-1_-20",
+      "x": -9.3,
+      "z": -20,
+      "radius": 0.65
+    },
+    {
+      "id": "pier_-1_-32",
+      "x": -9.3,
+      "z": -32,
+      "radius": 0.65
+    },
+    {
+      "id": "pier_1_14",
+      "x": 9.3,
+      "z": 14,
+      "radius": 0.65
+    },
+    {
+      "id": "pier_1_3",
+      "x": 9.3,
+      "z": 3,
+      "radius": 0.65
+    },
+    {
+      "id": "pier_1_-8",
+      "x": 9.3,
+      "z": -8,
+      "radius": 0.65
+    },
+    {
+      "id": "pier_1_-20",
+      "x": 9.3,
+      "z": -20,
+      "radius": 0.65
+    },
+    {
+      "id": "pier_1_-32",
+      "x": 9.3,
+      "z": -32,
+      "radius": 0.65
+    },
+    {
+      "id": "Plinth_01",
+      "x": -5.2,
+      "z": 8,
+      "radius": 0.93
+    },
+    {
+      "id": "Plinth_02",
+      "x": 5.2,
+      "z": 8,
+      "radius": 1.08
+    },
+    {
+      "id": "Plinth_03",
+      "x": -5.2,
+      "z": -3,
+      "radius": 0.8200000000000001
+    },
+    {
+      "id": "Plinth_04",
+      "x": 5.2,
+      "z": -3,
+      "radius": 1.07
+    },
+    {
+      "id": "Plinth_05",
+      "x": -5.2,
+      "z": -14,
+      "radius": 0.78
+    },
+    {
+      "id": "Plinth_06",
+      "x": 5.2,
+      "z": -14,
+      "radius": 0.93
+    },
+    {
+      "id": "Plinth_07",
+      "x": -5.2,
+      "z": -30,
+      "radius": 1.2899999999999998
+    },
+    {
+      "id": "Plinth_08",
+      "x": 5.2,
+      "z": -30,
+      "radius": 0.85
+    }
+  ],
+  "exhibits": [
+    {
+      "id": "central_dais",
+      "type": "plinth",
+      "position": [
+        0,
+        0,
+        -25
+      ],
+      "look": [
+        0,
+        1.2,
+        -25
+      ],
+      "radius": 3.06,
+      "flush": true
+    },
+    {
+      "id": "Plinth_01",
+      "type": "plinth",
+      "position": [
+        -5.2,
+        1.42,
+        8
+      ],
+      "look": [
+        -5.2,
+        2.12,
+        8
+      ],
+      "radius": 0.77,
+      "empty": true
+    },
+    {
+      "id": "Plinth_02",
+      "type": "plinth",
+      "position": [
+        5.2,
+        1.05,
+        8
+      ],
+      "look": [
+        5.2,
+        1.75,
+        8
+      ],
+      "radius": 0.92,
+      "empty": true
+    },
+    {
+      "id": "Plinth_03",
+      "type": "plinth",
+      "position": [
+        -5.2,
+        1.7,
+        -3
+      ],
+      "look": [
+        -5.2,
+        2.4,
+        -3
+      ],
+      "radius": 0.66,
+      "empty": true
+    },
+    {
+      "id": "Plinth_04",
+      "type": "plinth",
+      "position": [
+        5.2,
+        1.28,
+        -3
+      ],
+      "look": [
+        5.2,
+        1.98,
+        -3
+      ],
+      "radius": 0.91,
+      "empty": true
+    },
+    {
+      "id": "Plinth_05",
+      "type": "plinth",
+      "position": [
+        -5.2,
+        1.64,
+        -14
+      ],
+      "look": [
+        -5.2,
+        2.34,
+        -14
+      ],
+      "radius": 0.62,
+      "empty": true
+    },
+    {
+      "id": "Plinth_06",
+      "type": "plinth",
+      "position": [
+        5.2,
+        1.44,
+        -14
+      ],
+      "look": [
+        5.2,
+        2.1399999999999997,
+        -14
+      ],
+      "radius": 0.77,
+      "empty": true
+    },
+    {
+      "id": "Plinth_07",
+      "type": "plinth",
+      "position": [
+        -5.2,
+        0.88,
+        -30
+      ],
+      "look": [
+        -5.2,
+        1.58,
+        -30
+      ],
+      "radius": 1.13,
+      "empty": true
+    },
+    {
+      "id": "Plinth_08",
+      "type": "plinth",
+      "position": [
+        5.2,
+        1.87,
+        -30
+      ],
+      "look": [
+        5.2,
+        2.5700000000000003,
+        -30
+      ],
+      "radius": 0.69,
+      "empty": true
+    },
+    {
+      "id": "Frame_L_01",
+      "type": "frame",
+      "position": [
+        -9.52,
+        4.2,
+        8.5
+      ],
+      "look": [
+        -10,
+        4.2,
+        8.5
+      ],
+      "width": 2.01,
+      "height": 2.51,
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "empty": true
+    },
+    {
+      "id": "Frame_L_02",
+      "type": "frame",
+      "position": [
+        -9.52,
+        4.2,
+        -3
+      ],
+      "look": [
+        -10,
+        4.2,
+        -3
+      ],
+      "width": 2.71,
+      "height": 1.86,
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "empty": true
+    },
+    {
+      "id": "Frame_L_03",
+      "type": "frame",
+      "position": [
+        -9.52,
+        4.2,
+        -14.5
+      ],
+      "look": [
+        -10,
+        4.2,
+        -14.5
+      ],
+      "width": 2.16,
+      "height": 2.8099999999999996,
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "empty": true
+    },
+    {
+      "id": "Frame_L_04",
+      "type": "frame",
+      "position": [
+        -9.52,
+        4.2,
+        -29
+      ],
+      "look": [
+        -10,
+        4.2,
+        -29
+      ],
+      "width": 2.76,
+      "height": 1.9600000000000002,
+      "normal": [
+        1,
+        0,
+        0
+      ],
+      "empty": true
+    },
+    {
+      "id": "Frame_R_01",
+      "type": "frame",
+      "position": [
+        9.52,
+        4.2,
+        8.5
+      ],
+      "look": [
+        10,
+        4.2,
+        8.5
+      ],
+      "width": 2.01,
+      "height": 2.51,
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "empty": true
+    },
+    {
+      "id": "Frame_R_02",
+      "type": "frame",
+      "position": [
+        9.52,
+        4.2,
+        -3
+      ],
+      "look": [
+        10,
+        4.2,
+        -3
+      ],
+      "width": 2.71,
+      "height": 1.86,
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "empty": true
+    },
+    {
+      "id": "Frame_R_03",
+      "type": "frame",
+      "position": [
+        9.52,
+        4.2,
+        -14.5
+      ],
+      "look": [
+        10,
+        4.2,
+        -14.5
+      ],
+      "width": 2.16,
+      "height": 2.8099999999999996,
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "empty": true
+    },
+    {
+      "id": "Frame_R_04",
+      "type": "frame",
+      "position": [
+        9.52,
+        4.2,
+        -29
+      ],
+      "look": [
+        10,
+        4.2,
+        -29
+      ],
+      "width": 2.76,
+      "height": 1.9600000000000002,
+      "normal": [
+        -1,
+        0,
+        0
+      ],
+      "empty": true
+    }
+  ],
+  "lights": [
+    {
+      "position": [
+        -8.95,
+        4.04,
+        13.2
+      ],
+      "color": "#ffe1b0",
+      "intensity": 22,
+      "distance": 13,
+      "type": "point"
+    },
+    {
+      "position": [
+        -8.95,
+        4.04,
+        -8.5
+      ],
+      "color": "#ffe1b0",
+      "intensity": 22,
+      "distance": 13,
+      "type": "point"
+    },
+    {
+      "position": [
+        -8.95,
+        4.04,
+        -32.5
+      ],
+      "color": "#ffe1b0",
+      "intensity": 22,
+      "distance": 13,
+      "type": "point"
+    },
+    {
+      "position": [
+        8.95,
+        4.04,
+        13.2
+      ],
+      "color": "#ffe1b0",
+      "intensity": 22,
+      "distance": 13,
+      "type": "point"
+    },
+    {
+      "position": [
+        8.95,
+        4.04,
+        -8.5
+      ],
+      "color": "#ffe1b0",
+      "intensity": 22,
+      "distance": 13,
+      "type": "point"
+    },
+    {
+      "position": [
+        8.95,
+        4.04,
+        -32.5
+      ],
+      "color": "#ffe1b0",
+      "intensity": 22,
+      "distance": 13,
+      "type": "point"
+    },
+    {
+      "position": [
+        0,
+        10.8,
+        2
+      ],
+      "color": "#e8f2f5",
+      "intensity": 100,
+      "distance": 23,
+      "type": "point"
+    },
+    {
+      "position": [
+        0,
+        10.8,
+        -23
+      ],
+      "color": "#e8f2f5",
+      "intensity": 100,
+      "distance": 23,
+      "type": "point"
+    }
+  ],
+  "meshes": 77,
+  "triangles": 73856,
+  "bytes": 9734544,
+  "pbrSize": 1024,
+  "aoSize": 2048,
+  "renderRecommendation": {
+    "hemisphere": 0.45,
+    "environment": 0.45,
+    "exposure": 1,
+    "shadows": "one broad skylight key",
+    "floorRoughness": [
+      0.25,
+      0.37
+    ],
+    "skylightArea": {
+      "position": [
+        0,
+        12.5,
+        -9
+      ],
+      "target": [
+        0,
+        0,
+        -14
+      ],
+      "color": "#eff8ff",
+      "intensity": 2100,
+      "width": 4.8,
+      "height": 40
+    }
+  },
+  "centralDaisFlush": true
+}
