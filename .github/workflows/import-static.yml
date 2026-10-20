@@ -1,0 +1,64 @@
+name: Import Sudeki static site
+
+on:
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+concurrency:
+  group: sudeki-static-import
+  cancel-in-progress: false
+
+jobs:
+  import:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+    steps:
+      - uses: actions/checkout@v7
+      - name: Download the verified public site export
+        env:
+          GH_TOKEN: ${{ github.token }}
+        run: |
+          gh release download site-export-2026-10-20 --repo Sudeku/project-my --pattern Sudeki-Yandex-ready.zip --dir "$RUNNER_TEMP/sudeki-import"
+      - name: Verify and extract static files
+        run: |
+          python3 - <<'PY'
+          import hashlib
+          import os
+          from pathlib import Path
+          import zipfile
+
+          archive = Path(os.environ['RUNNER_TEMP']) / 'sudeki-import' / 'Sudeki-Yandex-ready.zip'
+          expected = '4a13166bd19d731654cb4a0e0d5c8f027a2592d70c6c59d2785afd4a46bc22df'
+          assert hashlib.sha256(archive.read_bytes()).hexdigest() == expected, 'Export checksum mismatch'
+          target = Path('.').resolve()
+          total = 0
+          with zipfile.ZipFile(archive) as package:
+              entries = [entry for entry in package.infolist() if not entry.is_dir()]
+              assert len(entries) == 632, 'Unexpected number of static files'
+              for entry in entries:
+                  destination = (target / entry.filename).resolve()
+                  assert destination.is_relative_to(target), 'Unsafe archive path'
+                  assert not any(part in {'.git', '.openai', '.env', 'node_modules'} for part in destination.relative_to(target).parts), 'Private path in export'
+                  destination.parent.mkdir(parents=True, exist_ok=True)
+                  data = package.read(entry)
+                  destination.write_bytes(data)
+                  total += len(data)
+          assert (target / 'index.html').is_file(), 'Missing website entry point'
+          assert total == 258426067, 'Unexpected extracted size'
+          Path('.nojekyll').touch()
+          print(f'Imported {len(entries)} static files, {total} bytes')
+          PY
+      - name: Commit the static website
+        run: |
+          git config user.name 'github-actions[bot]'
+          git config user.email '41898282+github-actions[bot]@users.noreply.github.com'
+          git add -- .
+          if git diff --cached --quiet; then
+            echo 'The verified export is already present.'
+          else
+            git commit -m 'Publish Sudeki website for free GitHub Pages'
+            git push origin HEAD:main
+          fi
+
