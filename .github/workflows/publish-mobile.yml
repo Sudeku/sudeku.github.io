@@ -16,7 +16,7 @@ jobs:
         env:
           GH_TOKEN: ${{ github.token }}
         run: |
-          gh release download mobile-v59-2026-10-20 --repo "$GITHUB_REPOSITORY" --pattern Sudeki-mobile-v59-final.zip --dir "$RUNNER_TEMP/mobile-update"
+          gh release download mobile-v59-2026-10-20 --repo "$GITHUB_REPOSITORY" --pattern Sudeki-mobile-v59-r2.zip --dir "$RUNNER_TEMP/mobile-update"
       - name: Verify and overlay static files
         run: |
           python3 - <<'PY'
@@ -24,8 +24,8 @@ jobs:
           import os
           from pathlib import Path
           import zipfile
-          archive = Path(os.environ['RUNNER_TEMP']) / 'mobile-update' / 'Sudeki-mobile-v59-final.zip'
-          expected = '8fd01f549681fac3eeb50040d53c512b76d31a9cac879edf6d792d06048eb625'
+          archive = Path(os.environ['RUNNER_TEMP']) / 'mobile-update' / 'Sudeki-mobile-v59-r2.zip'
+          expected = '2a21d736ef21104a5f070ba7738f2f4073fc23567020f2b09e3887d5a123a352'
           assert hashlib.sha256(archive.read_bytes()).hexdigest() == expected, 'Archive checksum mismatch'
           root = Path('.').resolve()
           total = 0
@@ -41,7 +41,7 @@ jobs:
                   destination.parent.mkdir(parents=True, exist_ok=True)
                   destination.write_bytes(data)
                   total += len(data)
-          assert total == 3229313, 'Unexpected update size'
+          assert total == 3229315, 'Unexpected update size'
           assert 'v59.js' in Path('index.html').read_text(), 'Incorrect entry point'
           print(f'Applied {len(entries)} verified static files; preserved existing models and archives.')
           PY
@@ -56,4 +56,5 @@ jobs:
             git commit -m 'Improve phone rendering, scrolling and touch layouts (v59)'
             git push origin HEAD:main
           fi
+
 
